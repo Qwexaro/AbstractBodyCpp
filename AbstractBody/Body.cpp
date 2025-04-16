@@ -6,12 +6,14 @@ Body::Body() : id{++amount_body}, massa { rand()%10 + 1}, x{0}, y{0}, z{0} {}
 
 Ball::Ball() : high_of_jump { 0 } {}
 
-Dice::Dice() : num{rand() % 7 - 6} {}
+Dice::Dice() : num{rand() % 6 + 1} {}
+
 
 int Body::getId() const
 {
 	return id;
 }
+
 
 void Ball::info()
 {

@@ -8,10 +8,11 @@ int main()
 
 	Dice dice1, dice2;	Ball ball1, ball2;
 
-
+	
 	ball1.info(); dice1.info();
 
 	dice1.dropIt(0);
+	dice1.dropIt(1);
 
 	ball1.dropIt(-12);
 
