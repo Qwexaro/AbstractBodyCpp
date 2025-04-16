@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <ctime>
 
 class Body
 {
@@ -12,6 +13,7 @@ public:
 	Body();
 	virtual int dropIt(int force) = 0;
 	virtual void info() = 0;
+	int getId() const;
 };
 
 class Ball : public Body
